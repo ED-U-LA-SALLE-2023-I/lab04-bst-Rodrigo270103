@@ -79,13 +79,27 @@ int main() {
    int i;
    int array[4] = {4, 2, 5, 76};
 
-
    for(i = 0; i < 4; i++)
       insert(array[i]);
 
 
-    printf("\nInorder: ");
+    printf("\nPOstorder: ");
     inorder_recorrido(root);
+
+printf("\n------------------------");
+   
+   int a;
+   int array2[9] = {50,30,24,5,28,45,98,52,60};
+
+   
+   
+   for(a = 0; a < 9; a++)
+      insert(array[a]);
+
+
+    printf("\nPOstorder: ");
+    inorder_recorrido(root);
+
 }
 
 
