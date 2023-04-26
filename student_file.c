@@ -66,18 +66,21 @@ if(root == NULL) {
 void inorder_recorrido(struct node* raiz) {
    if(raiz != NULL) {
         //Código
+         
         inorder_recorrido(raiz->left);
-        printf("\n %i", raiz->value);
+        
         inorder_recorrido(raiz->right);
+
+        printf("\n %i", raiz->value);
        
    }
 }
 int main() {
    int i;
-   int array[7] = {300, 27, 14, 10, 19, 31, 42 };
+   int array[4] = {4, 2, 5, 76};
 
 
-   for(i = 0; i < 7; i++)
+   for(i = 0; i < 4; i++)
       insert(array[i]);
 
 
