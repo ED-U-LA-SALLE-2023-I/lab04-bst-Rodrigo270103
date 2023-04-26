@@ -63,6 +63,19 @@ if(root == NULL) {
    }
 }
 
+void inorder_recorrido(struct node* raiz) {
+   if(raiz != NULL) {
+        //Código
+        inorder_recorrido(raiz->left);
+        printf("\n %i", raiz->value);
+        inorder_recorrido(raiz->right);
+       
+   }
+}
+
+
+
+
   
 
 
