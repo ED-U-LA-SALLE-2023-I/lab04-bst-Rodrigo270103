@@ -72,6 +72,20 @@ void inorder_recorrido(struct node* raiz) {
        
    }
 }
+int main() {
+   int i;
+   int array[7] = {300, 27, 14, 10, 19, 31, 42 };
+
+
+   for(i = 0; i < 7; i++)
+      insert(array[i]);
+
+
+    printf("\nInorder: ");
+    inorder_recorrido(root);
+}
+
+
 
 
 
